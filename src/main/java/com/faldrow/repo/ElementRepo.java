@@ -14,9 +14,5 @@ import static javafx.scene.input.KeyCode.T;
 public interface ElementRepo extends JpaRepository<Element, Long> {
 
     Optional<Element> findById(Long id);
-
-    void save();
-
-    void saveAll();
-
+    
 }

@@ -22,7 +22,7 @@ public class PeopleClient {
     @Autowired
     private ElementRepo elementRepo;
 
-    //@Transactional
+    @Transactional
     public void save(){
         saveElementsall(getAllElements());
 
