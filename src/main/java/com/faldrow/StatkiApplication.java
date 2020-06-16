@@ -16,12 +16,12 @@ public class StatkiApplication {
 	}
 
 
-	@Autowired
-	private PeopleClient peopleClient;
-
-	@EventListener(ApplicationReadyEvent.class)
-	public void init(){
-	peopleClient.save();
-	}
+//	@Autowired
+//	private PeopleClient peopleClient;
+//
+//	@EventListener(ApplicationReadyEvent.class)
+//	public void init(){
+//	   peopleClient.save();
+//	}
 
 }
