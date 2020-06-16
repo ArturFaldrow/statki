@@ -4,6 +4,7 @@ import com.faldrow.model.Element;
 import com.faldrow.model.Result;
 import com.faldrow.repo.ElementRepo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.event.EventListener;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,7 @@ public class PeopleClient {
     @Autowired
     private ElementRepo elementRepo;
 
+
     @Transactional
     public void save(){
         saveElementsall(getAllElements());
@@ -29,6 +31,7 @@ public class PeopleClient {
     }
 
     private void saveElementsall(Result result){
+
         for(Element element:result.getResults()){
             elementRepo.save(element);
 

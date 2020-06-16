@@ -18,5 +18,5 @@ public class Result {
     private String count;
     private String next;
     private String previous;
-    private List<Element> results;
+    private Set<Element> results;
 }
